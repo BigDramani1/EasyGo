@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EasyGo Admin Dashboard</title>
+    <link href="css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
+    <link href="css/lib/chartist/chartist.min.css" rel="stylesheet">
+    <link href="css/lib/font-awesome.min.css" rel="stylesheet">
+    <link href="css/lib/themify-icons.css" rel="stylesheet">
+    <link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/lib/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="css/lib/weather-icons.css" rel="stylesheet" />
+    <link href="css/lib/menubar/sidebar.css" rel="stylesheet">
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/helper.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="assets/img/logo.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />                       sd
+</head>
+
+<body>
+
+    <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+        <div class="nano">
+            <div class="nano-content">
+                <ul>
+                    <div class="logo"><a href="index.html">
+                            <img src="images/logo.png" height="50" width="80"></a></div>
+                    <li><a href="index.html"><i class="ti-dashboard"></i>Dashboard</a></li>
+                    <li><a href="#trips"><i class="ti-desktop"></i>Trips</a></li>
+                    <li><a href="#financial"><i class="ti-layout-grid2"></i>Financial</a></li>
+                    <li><a href="#notification"><i class="ti-email"></i> Notifications</a></li>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="float-left">
+                        <div class="hamburger sidebar-toggle">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="float-right">
+                        <div class="dropdown dib">
+                        <div class="dropdown dib">
+                            <div class="header-icon" data-toggle="dropdown">
+                                <span class="user-avatar"><img src="images/profile.png" width="40" height="40"> Dramani
+                                    <i class="ti-angle-down f-s-10"></i>
+                                </span>
+                                <div class="drop-down dropdown-profile dropdown-menu dropdown-menu-right">
+                                    <div class="dropdown-content-body">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="ti-user"></i>
+                                                    <span>Profile</span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="ti-email"></i>
+                                                    <span>Inbox</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="ti-settings"></i>
+                                                    <span>Setting</span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="ti-lock"></i>
+                                                    <span>Lock Screen</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="ti-power-off"></i>
+                                                    <span>Logout</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content-wrap">
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 p-r-0 title-margin-right">
+                        <div class="page-header">
+                            <div class="page-title">
+                                <h4>All time statistics</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-l-0 title-margin-left">
+                        <div class="page-header">
+                            <div class="page-title">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                                    <li class="breadcrumb-item active">Home</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section id="main-content">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="stat-widget-one">
+                                    <div class="stat-icon dib"><i class="far fa-comment" style="color:white;"></i>
+                                    </div>
+                                    <div class="stat-content dib">
+                                        <div class="stat-digit">4</div>
+                                        <div class="stat-text">Published Trips</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="stat-widget-one">
+                                    <div class="stat-icon dib"style="color:red;"><i class="fas fa-users" style="color:white; background-color:rgb(225, 93, 11)" width="40"></i>
+                                    </div>
+                                    <div class="stat-content dib">
+                                        <div class="stat-digit">1</div>
+                                        <div class="stat-text">Trip bookings</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="stat-widget-one">
+                                    <div class="stat-icon dib"><i class="fa fa-thumbs-up" style="color:white;  background-color:rgb(172, 49, 238)" ></i>
+                                    </div>
+                                    <div class="stat-content dib">
+                                        <div class="stat-digit">GHS 0</div>
+                                        <div class="stat-text">Withdrawable amount</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="stat-widget-one">
+                                    <div class="stat-icon dib"><i class="ti-money" style="color:white; background-color:rgb(39, 190, 245)"></i></div>
+                                    <div class="stat-content dib">
+                                        <div class="stat-digit">GHS 840.00</div>
+                                        <div class="stat-text">Total Revenue</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card" style="height:270px; background:linear-gradient(to bottom,  #FFA500 76%, #fff 20%);">
+                                <div class="card-title">
+                                    <div class="media-body" style="margin-top:20px;">
+                                        <p Style="color:white; font-size:15px;">Google Chrome <span style="float:right;color:white; font-size:15px;">1 Seat Booked</span></p>
+                                        <h1 style="text-align: center; margin-top:70px; color:white;">08 Sep 2022</h1>
+                                        <p style="text-align: center; margin-top:50px;">Experience Accra</p>
+                                    </div>
+                                </div> 
+                                </div>
+                                </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-title">
+                                    <h4>Trip Performance (COMING SOON) </h4>
+                                </div>
+                                <div class="recent-comment m-t-15">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p>Google Chrome</p>
+                                            <div class="comment-date"style="color:#0ed73d" >12% <i class="fa-solid fa-arrow-turn-up"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p>Firefox </p>
+                                            <div class="comment-date"style="color:#0ed73d" >15% <i class="fa-solid fa-arrow-turn-up"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p>Internet Explorer</p>
+                                            <div class="comment-date"style="color:#0ed73d">18% <i class="fa-solid fa-arrow-turn-up"></i> </div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p>Safari</p>
+                                            <div class="comment-date"style="color:#e90707" >17% <i class="fa-solid fa-arrow-turn-down"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p>Opera</p>
+                                            <div class="comment-date"style="color:#e90707" >10%  <i class="fa-solid fa-arrow-turn-down"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p>Mobile & tablet</p>
+                                            <div class="comment-date"style="color:#0ed73d" >14% <i class="fa-solid fa-arrow-turn-up"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <p>Others</p>
+                                            <div class="comment-date"style="color:#0ed73d">5% <i class="fa-solid fa-arrow-turn-up"></i></div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="col-lg-4">
+                            <div class="card" style="background:linear-gradient(to top, #fff 75%, #FFA500 25% );">
+                                <div class="card-body">
+                                    <div class="year-calendar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card">
+                                <div class="card-title pr">
+                                    <h4>Recent book</h4>
+
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table student-data-table m-t-20">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Trip Name</th>
+                                                    <th>Trip Start Date</th>
+                                                    <th>User Name</th>
+                                                    <th>Numbers of seats</th>
+                                                    <th></th>
+                                                   
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Experience Accra</td>
+                                                    <td>08 Sep 2022</td>
+                                                    <td>Kweku Acquaye</td>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card" style="height:400px">
+                                <div class="card-title">
+                                    <h4>Trip location</h4>
+                                    <p><i class="fa fa-plus-square" style="color:black"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer">
+                                <p style="text-align:center"> &copy; Copyright </strong>All Rights Reserved & Designed by <a href="mailto:a.dramani@aisghana.org">Dramani Alhassan</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery vendor -->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/jquery.nanoscroller.min.js"></script>
+    <!-- nano scroller -->
+    <script src="js/lib/menubar/sidebar.js"></script>
+    <script src="js/lib/preloader/pace.min.js"></script>
+    <!-- sidebar -->
+
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- bootstrap -->
+
+    <script src="js/lib/calendar-2/moment.latest.min.js"></script>
+    <script src="js/lib/calendar-2/pignose.calendar.min.js"></script>
+    <script src="js/lib/calendar-2/pignose.init.js"></script>
+
+
+    <script src="js/lib/weather/jquery.simpleWeather.min.js"></script>
+    <script src="js/lib/weather/weather-init.js"></script>
+    <script src="js/lib/circle-progress/circle-progress.min.js"></script>
+    <script src="js/lib/circle-progress/circle-progress-init.js"></script>
+    <script src="js/lib/chartist/chartist.min.js"></script>
+    <script src="js/lib/sparklinechart/jquery.sparkline.min.js"></script>
+    <script src="js/lib/sparklinechart/sparkline.init.js"></script>
+    <script src="js/lib/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/lib/owl-carousel/owl.carousel-init.js"></script>
+    <!-- scripit init-->
+    <script src="js/dashboard2.js"></script>
+</body>
+
+</html>
